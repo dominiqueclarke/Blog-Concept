@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+/*
+   Default button
+   ========================================================================== */
+
+.btn {
+  font-family: $heading-font;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  @include font-size(14);
+  background-color: $bright-blue;
+  color: $white;
+  border: 3px solid $bright-blue;
+  transition: all .3s ease-in-out;
+  &:visited {
+    color: $white;
+  }
+  &:hover {
+    background-color: $body-color;
+    color: $orange;
+    border: 3px solid $orange;
+    transition: all .3s ease-in-out;
+  }
+}
+
+/*
+   Close button
+   ========================================================================== */
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: transparent;
+  border: 0 solid transparent;
+  color: $white;
+}
